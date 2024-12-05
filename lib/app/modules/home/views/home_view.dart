@@ -18,7 +18,7 @@ class HomeView extends GetView<HomeController> {
           children: [
             Obx(
               () => Text(
-                controller.title.value,
+                controller.riddleResult.value.data?.title.toString() ?? 'wait',
                 style: TextStyle(fontSize: 20),
               ),
             ),
